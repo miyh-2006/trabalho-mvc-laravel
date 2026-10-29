@@ -1,0 +1,13 @@
+//Deletar lista:
+    php artisan tinker --execute="DB::table('tarefas')->delete();"
+
+//Iniciar codigo: 
+    php artisan serve --host=0.0.0.0 --port=8000
+
+//Entrar na pasta: 
+    cd /workspaces/trabalho-mvc-laravel/mvc-app
+
+//Consultar Banco de Dados:
+    php artisan tinker --execute="dump(DB::table('tarefas')->get(['id', 'titulo', 'concluida']));"
+
+    
